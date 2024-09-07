@@ -3,6 +3,8 @@ function addRows() {
     const tableBody = document.querySelector('#audio-table tbody');
 
     const audio_path = "assets/demo"
+
+    const order = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     
     // Number of rows to add
     const numberOfRows = 8;
@@ -24,7 +26,7 @@ function addRows() {
     // Add rows
     for (let i = 0; i < numberOfRows; i++) {
         const row = document.createElement('tr');
-        const base_path = audio_path + "/" + (i+1) +"/"
+        const base_path = audio_path + "/" + (order[i]) +"/"
         for (let j = 0; j < audiosPerRow; j++) {
             const cell = document.createElement('td');
             const audio = document.createElement('audio');
