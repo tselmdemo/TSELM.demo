@@ -24,12 +24,13 @@ function addRows() {
     // Add rows
     for (let i = 0; i < numberOfRows; i++) {
         const row = document.createElement('tr');
-
+        const base_path = audio_path + "/" + (i+1) +"/"
         for (let j = 0; j < audiosPerRow; j++) {
             const cell = document.createElement('td');
             const audio = document.createElement('audio');
             audio.controls = true;
-            audio.src = audioSources[j % audioSources.length]; // Loop through audio sources
+            
+            audio.src = base_path +  audioSources[j % audioSources.length]; // Loop through audio sources
             cell.appendChild(audio);
             row.appendChild(cell);
         }
