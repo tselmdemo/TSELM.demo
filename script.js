@@ -5,7 +5,7 @@ function addRows() {
     const audio_path = "assets/demo"
     
     // Number of rows to add
-    const numberOfRows = 2;
+    const numberOfRows = 4;
     
     // Number of audio elements per row
     const audiosPerRow = 7;
