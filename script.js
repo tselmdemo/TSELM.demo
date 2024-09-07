@@ -1,19 +1,24 @@
 // Function to add rows to the table
 function addRows() {
     const tableBody = document.querySelector('#audio-table tbody');
+
+    const audio_path = "demo"
     
     // Number of rows to add
-    const numberOfRows = 10;
+    const numberOfRows = 1;
     
     // Number of audio elements per row
-    const audiosPerRow = 4;
+    const audiosPerRow = 7;
 
     // Example audio sources
     const audioSources = [
-        'audio1.mp3',
-        'audio2.mp3',
-        'audio3.mp3',
-        'audio4.mp3'
+        'mixture.wav',
+        'target.wav',
+        'reference.wav',
+        'spex_plus.wav',
+        'tselm_l.wav',
+        'tselm_l_hybrid.wav',
+        'continuous_wavlm_l6.wav'
     ];
     
     // Add rows
