@@ -1,0 +1,7 @@
+.no-link-style {
+    text-decoration: none; /* Remove underline */
+    color: inherit;        /* Inherit color from parent (button) */
+    display: inline-block;  /* Ensure the anchor behaves like a button child */
+    width: 100%;            /* Optional: To fill the button */
+    height: 100%;           /* Optional: To fill the button */
+}
