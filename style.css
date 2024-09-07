@@ -5,3 +5,9 @@
     width: 100%;            /* Optional: To fill the button */
     height: 100%;           /* Optional: To fill the button */
 }
+
+.markdown-body {
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    border-bottom: 2px solid #c4c6c9;
+}

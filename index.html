@@ -12,7 +12,9 @@
         <div class="d-flex justify-content-center align-items-center text-center">
             <h1>TSELM: Target speaker extraction using discrete tokens and language models</h1>
         </div>
-        <div class="d-flex justify-content-center align-items-center text-center" >Beilong Tang, Bang Zeng, Ming Li</div>
+        <div class="d-flex justify-content-center align-items-center text-center" >
+            Beilong Tang, Bang Zeng, Ming Li
+        </div>
         <br>
         <!-- Paper and Code line -->
         <div class="justify-content-center align-items-center text-center">
@@ -33,6 +35,22 @@
         </a>
           </button>
         </div>
+        <h2 class="markdown-body">Abstract</h2>
+        <p style="text-align: justify;">
+            We propose TSELM, a novel target speaker extraction network that leverages discrete tokens and language
+models. The model utilizes multiple discretized layers from
+WavLM Large as input tokens and incorporates cross-attention
+mechanisms to integrate target speaker information. Language
+models are employed to capture the sequence dependencies, while
+a scalable HiFi-GAN is used to reconstruct the audio from
+the tokens. By applying a cross-entropy loss, TSELM models
+the probability distribution of output tokens, thus converting
+the complex regression problem of audio generation into a
+classification task. To the best of our knowledge, this is the
+first approach to target speaker extraction using discrete tokens.
+However, a performance gap remains between our method and
+continuous approaches. The code and pretrained models are available at <a href="https://github.com/Beilong-Tang/TSELM">https://github.com/Beilong-Tang/TSELM</a>. 
+        </p>
 
     </div>
 
