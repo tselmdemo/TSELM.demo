@@ -2,7 +2,7 @@
 function addRows() {
     const tableBody = document.querySelector('#audio-table tbody');
 
-    const audio_path = "demo"
+    const audio_path = "assets/demo"
     
     // Number of rows to add
     const numberOfRows = 1;
