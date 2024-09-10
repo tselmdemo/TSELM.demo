@@ -1,10 +1,18 @@
 // Function to add rows to the table
-function addRows() {
-    const tableBody = document.querySelector('#audio-table tbody');
+const audioSources = [
+    'mixture.wav',
+    'target.wav',
+    'spex_plus.wav',
+    'tselm_l.wav',
+    'tselm_l_hybrid.wav',
+    'continuous_wavlm_l6.wav',
+    'reference.wav',
+];
 
-    const audio_path = "assets/demo"
+function addRows(name, order) {
+    const tableBody = document.querySelector(`#${name} tbody`);
 
-    const order = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    const audio_path = `assets/demo/${name}`
     
     // Number of rows to add
     const numberOfRows = order.length;
@@ -12,17 +20,6 @@ function addRows() {
     // Number of audio elements per row
     const audiosPerRow = 7;
 
-    // Example audio sources
-    const audioSources = [
-        'mixture.wav',
-        'target.wav',
-        'reference.wav',
-        'spex_plus.wav',
-        'tselm_l.wav',
-        'tselm_l_hybrid.wav',
-        'continuous_wavlm_l6.wav'
-    ];
-    
     // Add rows
     for (let i = 0; i < numberOfRows; i++) {
         const row = document.createElement('tr');
@@ -41,5 +38,10 @@ function addRows() {
     }
 }
 
+const libri2mix = "libri2mix-audio-table"
+const order = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 // Add rows when the page loads
-window.onload = addRows;
+addRows("libri2mix-audio-table", order);
+// addWSJ0();
+
+// window.onload = addWSJ0;
