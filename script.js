@@ -40,8 +40,4 @@ function addRows(name, order) {
 
 const libri2mix = "libri2mix-audio-table"
 const order = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-// Add rows when the page loads
 addRows("libri2mix-audio-table", order);
-// addWSJ0();
-
-// window.onload = addWSJ0;
