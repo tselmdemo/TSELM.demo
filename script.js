@@ -18,7 +18,7 @@ function addRows(name, order) {
     const numberOfRows = order.length;
     
     // Number of audio elements per row
-    const audiosPerRow = len(audioSources);
+    const audiosPerRow = audioSources.length;
 
     // Add rows
     for (let i = 0; i < numberOfRows; i++) {
