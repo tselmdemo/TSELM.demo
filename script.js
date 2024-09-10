@@ -39,5 +39,9 @@ function addRows(name, order) {
 }
 
 const libri2mix = "libri2mix-audio-table"
-const order = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-addRows("libri2mix-audio-table", order);
+var order = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+addRows(libri2mix, order);
+
+const wsj0_2mix = "wsj0-2mix"
+order = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+addRows(wsj0_2mix, order);
