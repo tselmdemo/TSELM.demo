@@ -47,20 +47,17 @@
     <div class="markdown-body">
       <h2>Overview</h2>
       <p style="text-align: justify;">
-        We propose TSELM, a novel target speaker extraction network that leverages discrete tokens and language
-        models. The model utilizes multiple discretized layers from
-        WavLM Large as input tokens and incorporates cross-attention
-        mechanisms to integrate target speaker information. Language
-        models are employed to capture the sequence dependencies, while
-        a scalable HiFi-GAN is used to reconstruct the audio from
-        the tokens. By applying a cross-entropy loss, TSELM models
-        the probability distribution of output tokens, thus converting
-        the complex regression problem of audio generation into a
-        classification task. To the best of our knowledge, this is the
-        first approach to target speaker extraction using discrete tokens.
-        However, a performance gap remains between our method and
-        continuous approaches. The code and pretrained models are available at <a
-          href="https://github.com/Beilong-Tang/TSELM">https://github.com/Beilong-Tang/TSELM</a>.
+        We propose TSELM, a novel target speaker extraction network that leverages discrete tokens and language models.
+        TSELM utilizes multiple discretized layers from WavLM as input
+        tokens and incorporates cross-attention mechanisms to integrate
+        target speaker information. Language models are employed to
+        capture the sequence dependencies, while a scalable HiFi-GAN
+        is used to reconstruct the audio from the tokens. By applying a
+        cross-entropy loss, TSELM models the probability distribution of
+        output tokens, thus converting the complex regression problem of
+        audio generation into a classification task. Experimental results
+        show that TSELM achieves excellent results in speech quality
+        and comparable results in speech intelligibility.
       <div style="width: 100%" class="text-center">
         <img src="assets/model.svg" style="width: 80%;">
         <p>Overview of our model</p>
